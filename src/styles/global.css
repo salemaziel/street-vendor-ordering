@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+/*background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 66%, rgba(0, 0, 0, 0.6)), url("../images/esco-arch2.jpg");*/
+    @apply w-full min-h-screen font-sans antialiased leading-normal tracking-wider text-gray-900 bg-center bg-no-repeat bg-cover;
+}
+
+main {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 66%, rgba(0, 0, 0, 0.6)), url("../images/esco-arch2.jpg");
+    @apply w-full h-screen min-h-full min-h-screen font-sans antialiased leading-normal tracking-wider text-gray-900 bg-center bg-no-repeat bg-cover;
+}
+
+.bgProfilePic {
+    background-image: url("../images/tamales-lady-square.jpg");
+}
