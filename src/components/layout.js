@@ -40,7 +40,7 @@ function Layout({ children }) {
         </nav>
       </footer>
     </div>*/}
-  <footer className="bg-black bg-opacity-80">
+  <footer className="bg-black">
     <div className="flex justify-center p-4 mx-auto">
       <p className="text-base text-center text-white">
         Created By <a href="https://viadelweb.com" target="_blank" rel="follow noopener noreferrer">Via Del Web</a>
