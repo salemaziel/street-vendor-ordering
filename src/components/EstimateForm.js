@@ -1,10 +1,22 @@
+//import React, { useState } from "react";
+
 import React from "react";
 import { useForm } from "react-hook-form";
 
+
+
+
+
+
 const EstimateForm = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, errors, watch } = useForm();
+  const watchAllFields = watch();
   const onSubmit = (data) => console.log(data);
   console.log(errors);
+
+  //const [age, setAge] = useState(19);
+  //const handleClick = () => setAge(age + 1)
+
   return (
     <>
       <form
@@ -106,16 +118,26 @@ const EstimateForm = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center mx-auto mb-4 text-center">
-          <div className="flex flex-col">
+        <div className="flex flex-col justify-center mb-4 text-center">
+          
           <label htmlFor="text" className="text-sm leading-7 text-gray-600">
             Price
           </label>
-          <div className="text-xl text-center text-black">
-            $9.99
+          <div className="flex flex-row justify-evenly">
+          <div className="mx-auto text-xl text-center text-black">
+            {watchAllFields.tamales ? (<p>${[watchAllFields.tamales * 2]}</p>) : ("")}
+          </div>
+          <div className="mx-auto text-xl text-center text-black">
+            {watchAllFields.tortas ? (<p> ${[watchAllFields.tortas * 5]}</p>) : ("")}
           </div>
           </div>
         </div>
+        {/*<div class> 
+          I am {age} Years Old 
+        <div> 
+        <button onClick={handleClick}>Increase my age! </button>
+      </div>
+        </div>*/}
 
         <input
           type="submit"

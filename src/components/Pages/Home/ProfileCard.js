@@ -20,7 +20,7 @@ function ProfileCard(){
         {/*Main Col*/}
         <div
           id="profile"
-          className="w-full mx-6 bg-white rounded-lg shadow-2xl opacity-75 lg:w-3/5 lg:rounded-l-lg lg:rounded-r-none lg:mx-0 animate-fade-in-fwd"
+          className="w-full mx-6 bg-white rounded-lg shadow-2xl opacity-75 lg:w-3/5 lg:rounded-lg lg:mx-0 animate-fade-in-fwd"
         >
           <div className="p-4 text-center md:p-12 lg:text-left">
             {/* Image for mobile view*/}
@@ -221,7 +221,7 @@ function ProfileCard(){
           {/* Big profile image for side bar (desktop) */}
           <img
             src={TamalesLady}
-            className="hidden rounded-none shadow-2xl lg:rounded-lg lg:block animate-fade-in-fwd"
+            className="hidden rounded-none shadow-2xl lg:rounded-lg lg:rounded-r-lg lg:rounded-l-none lg:block animate-fade-in-fwd"
           />
           {/* Image from: http://unsplash.com/photos/MP0IUfwrn0A */}
         </div>
