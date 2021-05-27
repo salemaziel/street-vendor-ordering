@@ -30,11 +30,11 @@ Use `npm run build` to build your site for production.
 
 ### Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/taylorbryant/gatsby-starter-tailwind)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/salemaziel/street-vendor-ordering)
 
 ### Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Ftaylorbryant%2Fgatsby-starter-tailwind%2Ftree%2Fmaster)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fsalemaziel%2Fstreet-vendor-ordering%2Ftree%2Fmaster)
 
 ## Resources
 

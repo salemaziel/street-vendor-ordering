@@ -1,5 +1,3 @@
-//import React, { useState } from "react";
-
 import React from "react";
 import { useForm } from "react-hook-form";
 
@@ -8,30 +6,29 @@ import { useForm } from "react-hook-form";
 
 
 
-const EstimateForm = () => {
+const OrderForm = () => {
   const { register, handleSubmit, errors, watch } = useForm();
   const watchAllFields = watch();
   const onSubmit = (data) => console.log(data);
   console.log(errors);
 
-  //const [age, setAge] = useState(19);
-  //const handleClick = () => setAge(age + 1)
+
 
   return (
     <>
       <form
-        name="estimateform"
+        name="orderForm"
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        action="/#"
+        action="/success"
         /*className="flex-col w-full p-6 rounded md:px-8 md:py-4 md:w-3/4 lg:w-full md:flex md:mx-auto lg:mr-0 "*/
         className="flex-col w-full py-6 rounded md:py-4 md:w-3/4 lg:w-full md:flex md:mx-auto lg:mr-0 "
         onSubmit={handleSubmit(onSubmit)}
       >
-        {/*<h2 className="mb-5 text-lg font-medium text-center text-gray-900 title-font">Get A Free Estimate</h2>*/}
+        
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="estimateform" />
+        <input type="hidden" name="form-name" value="orderForm" />
 
         <div className="flex flex-row w-full mb-4 justify-evenly md:mb-2">
           <div className="relative w-1/2 pr-2 mb-1">
@@ -83,11 +80,6 @@ const EstimateForm = () => {
             <label htmlFor="number" className="text-sm leading-7 text-gray-600">
               Number of Tamales
             </label>
-            {/*<textarea 
-            id="message" 
-            name="message" 
-            className="w-full h-32 px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded outline-none resize-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
-            defaultValue={""} />*/}
             <input
               type="number"
               id="tamales"
@@ -102,11 +94,6 @@ const EstimateForm = () => {
             <label htmlFor="number" className="text-sm leading-7 text-gray-600">
               Number of Tortas
             </label>
-            {/*<textarea 
-            id="message" 
-            name="message" 
-            className="w-full h-32 px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded outline-none resize-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
-            defaultValue={""} />*/}
             <input
               type="number"
               id="tortas"
@@ -132,12 +119,7 @@ const EstimateForm = () => {
           </div>
           </div>
         </div>
-        {/*<div class> 
-          I am {age} Years Old 
-        <div> 
-        <button onClick={handleClick}>Increase my age! </button>
-      </div>
-        </div>*/}
+
 
         <input
           type="submit"
@@ -149,4 +131,4 @@ const EstimateForm = () => {
   );
 };
 
-export default EstimateForm;
+export default OrderForm;
