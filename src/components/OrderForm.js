@@ -9,7 +9,21 @@ import { useForm } from "react-hook-form";
 const OrderForm = () => {
   const { register, handleSubmit, errors, watch } = useForm();
   const watchAllFields = watch();
-  const onSubmit = (data) => console.log(data);
+//  const onSubmit = (data) => console.log(data);
+const handleSubmit = (e) => {
+  e.preventDefault()
+  const form = e.target
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({
+      "form-name": form.getAttribute("name"),
+      ...state,
+    }),
+  })
+    .then(() => navigate(form.getAttribute("action")))
+    .catch((error) => alert(error))
+}
   console.log(errors);
 
 
