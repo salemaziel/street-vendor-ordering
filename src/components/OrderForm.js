@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 
 
 const OrderForm = () => {
-  const { register, handleSubmit, errors, watch } = useForm();
+  const { register, errors, watch } = useForm();
   const watchAllFields = watch();
 //  const onSubmit = (data) => console.log(data);
 const handleSubmit = (e) => {
