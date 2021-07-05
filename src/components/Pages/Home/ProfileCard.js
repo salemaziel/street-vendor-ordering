@@ -1,5 +1,5 @@
 import React from "react";
-import OrderForm from "../../OrderForm"
+import OrderForm2 from "../../OrderForm2"
 import Social from "./socialIcons"
 
 import TamalesLady from "../../../images/tamales-lady.jpg"
@@ -54,7 +54,7 @@ function ProfileCard(){
             </p>
             <div className="p-0">
 
-      <OrderForm />
+      <OrderForm2 />
             </div>
             <Social />
           </div>
