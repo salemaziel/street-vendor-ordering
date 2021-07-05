@@ -1,6 +1,8 @@
 import React from "react";
 import OrderForm2 from "../../OrderForm2"
 import Social from "./socialIcons"
+import PropTypes from "prop-types";
+
 
 import TamalesLady from "../../../images/tamales-lady.jpg"
 
@@ -72,8 +74,15 @@ function ProfileCard(props){
       </section>
 
     </>
-  );
+  )
 }
+
+ProfileCard.propTypes = {
+  name: PropTypes.string,
+  description: PropTypes.string,
+  location: PropTypes.string,
+  optionalBio: PropTypes.string,
+};
 
 
 export default ProfileCard;

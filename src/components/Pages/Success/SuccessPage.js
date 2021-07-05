@@ -3,7 +3,8 @@ import React from "react";
 import Social from "../Home/socialIcons"
 
 import TamalesLady from "../../../images/tamales-lady.jpg"
-import { any } from "prop-types";
+import PropTypes from "prop-types";
+
 
 function SuccessPage(props){
 
@@ -81,12 +82,11 @@ Order Successful!
   );
 }
 
-SuccessPage.defaultProps = {
-    props: ""
-}
-
 SuccessPage.propTypes = {
-    props: any
-}
+    name: PropTypes.string,
+    description: PropTypes.string,
+    location: PropTypes.string,
+    optionalBio: PropTypes.string,
+};
 
 export default SuccessPage;
