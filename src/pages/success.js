@@ -1,28 +1,30 @@
 import React from "react";
-
+//import OrderForm2 from "../components/Pages/Home/OrderForm2"
+import SuccessPage from "../components/Pages/Success/SuccessPage";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-//import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
+function Success(){
 
-function Success() {
   return (
-    <Layout>
+    <>
+        <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
-      <section className="text-center">
+    <SuccessPage 
+            name="Fabiola Martinez"
+            description="Tamales &amp; Tortas"
+            location="Escondido, near Washington Ave &amp; Broadway"
+            optionalBio=""
+            />
 
+      </Layout>
 
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Order Successful
-        </h2>
-
-
-  </section>
-    </Layout>
+    </>
   );
 }
+
 
 export default Success;

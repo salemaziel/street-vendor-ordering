@@ -31,7 +31,7 @@ const OrderForm2 = () => {
   return (
     <>
       <form
-        name="orderForm2"
+        name="orderForm"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
