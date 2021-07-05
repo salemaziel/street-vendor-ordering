@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 //import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
-import HomePage from "../components/Pages/Home/HomePage";
+//import HomePage from "../components/Pages/Home/HomePage";
 
 import ProfileCard from "../components/Pages/Home/ProfileCard";
 
@@ -19,8 +19,7 @@ function IndexPage() {
       <ProfileCard
         name="Fabiola Martinez"
         description="Tamales &amp; Tortas"
-        location="Escondido,
-         near Washington Ave &amp; Broadway"
+        location="Escondido,near Washington Ave &amp; Broadway"
         optionalBio="Optional short description about yourself, what you do, what you sell, etc"
       />{" "}
       {/*<section className="text-center">
