@@ -51,7 +51,7 @@ const OrderForm2 = () => {
               className="text-sm leading-7 text-gray-600"
             >
               Name*
-            </label>
+            
             <input
               type="text"
               id="full-name"
@@ -60,7 +60,9 @@ const OrderForm2 = () => {
               className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
               placeholder="Name/Nombre"
               ref={register({ required: true, maxLength: 80 })}
+              
             />
+            </label>
           </div>
           {/*<div className="relative mb-1">
               <label htmlFor="email" className="text-sm leading-7 text-gray-600">
@@ -77,7 +79,7 @@ const OrderForm2 = () => {
           <div className="relative w-1/2 pl-2 mb-1">
             <label htmlFor="phone" className="text-sm leading-7 text-gray-600">
               Phone*
-            </label>
+           
             <input
               type="tel"
               id="tel"
@@ -87,13 +89,14 @@ const OrderForm2 = () => {
               placeholder="760-555-5555"
               ref={register({ required: true, maxLength: 12 })}
             />
+             </label>
           </div>
         </div>
         <div className="flex flex-row w-full justify-evenly">
           <div className="relative w-1/2 pr-2 mb-3">
             <label htmlFor="number" className="text-sm leading-7 text-gray-600">
               Number of Tamales
-            </label>
+            
             <input
               type="number"
               id="tamales"
@@ -103,11 +106,12 @@ const OrderForm2 = () => {
               placeholder="0"
               ref={register({ required: true, min: 1, max: 100 })}
             />
+            </label>
           </div>
           <div className="relative w-1/2 pl-2 mb-3">
             <label htmlFor="number" className="text-sm leading-7 text-gray-600">
               Number of Tortas
-            </label>
+            
             <input
               type="number"
               id="tortas"
@@ -117,6 +121,7 @@ const OrderForm2 = () => {
               placeholder="0"
               ref={register({ required: true, min: 1, max: 100 })}
             />
+            </label>
           </div>
         </div>
         <div className="flex flex-col justify-center mb-4 text-center">
