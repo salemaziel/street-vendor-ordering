@@ -13,7 +13,7 @@ const OrderForm = () => {
 const handleSubmit = (e) => {
   e.preventDefault()
   const form = e.target
-  fetch("/", {
+  fetch("/success", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({
