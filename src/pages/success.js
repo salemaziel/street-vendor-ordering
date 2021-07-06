@@ -10,8 +10,8 @@ function Success(){
     <>
         <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
+        keywords={[`tamales`, `tortas`, `successful order`, `Latino`]}
+        title="Order Successfull"
       />
     <SuccessPage 
             name="Fabiola Martinez"

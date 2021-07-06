@@ -20,7 +20,7 @@ module.exports = {
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green["500"],
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/elote-logo-square.jpg`,
       },
     },
